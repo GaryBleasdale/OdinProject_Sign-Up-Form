@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="max-container">
+    <div class="container">
+      <div class="left-hand">
+        <div class="odin-logo-container">
+
+          <div class="odin-logo">
+            <img src="Assets/snowflake-svgrepo-com.svg" alt="">
+            <h1>Odin</h1>
+          </div>
+        </div>
+      </div>
+      <div class="right-hand">
+        <div class="right-hand-container">
+          <div class="text">
+            <h4>This is not a real online service! You know you need something like this in your life to help you
+              realize your deepest dreams. Sign up now to get started.
+            </h4>
+            <h4>You know you want to.</h4>
+          </div>
+          <form action="https://httpbin.org/post" method="post">
+            <h4>Let's do this!</h4>
+            <div class="inputs">
+              <div class="inputs-inner">
+                <div class="input">
+                  <label for="name">first name</label>
+                  <input type="text" id="name" required placeholder="John" name="name">
+                </div>
+                <div class="input">
+                  <label for="surname">last name</label>
+                  <input type="text" id="surname" required placeholder="Smith" name="surname">
+                </div>
+                <div class="input">
+                  <label for="email">email</label>
+                  <input type="email" id="email" required placeholder="john@smith.com" name="email">
+                </div>
+                <div class="input">
+                  <label for="phone">phone number</label>
+                  <input type="text" id="phone" pattern="[0-9]{12}" required placeholder="12 digit telephone number"
+                    name="phonenumber">
+                </div>
+                <div class="input">
+                  <label for="password">password</label>
+                  <input type="password" id="password" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)" required
+                    name='password'>
+                </div>
+                <div class="input">
+                  <label for="confirm-password">confirm password</label>
+                  <input type="password" id="confirm-password">
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="submit">Create Account</button>
+              <h5>Already have an account? <a href="#">Sign in</a></h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
